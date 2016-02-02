@@ -37,8 +37,6 @@ public class Agent implements Runnable{
 			}
 			catch(InterruptedException e){}
 		}
-
-		table.endRunning();
 		System.exit(1);
 	}
 

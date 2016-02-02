@@ -18,7 +18,7 @@ public class Chef implements Runnable{
 	 * Chefs function to run. Makes sandwiches until 20 sandwiches are created then quits his job.
 	 */
 	public void run(){
-		while(table.isRunning()){
+		while(true){
 			missingItems = table.get(item);
 			System.out.println(Thread.currentThread().getName() + " created a sandwich using missing items: "
 					+ missingItems.get(0).getName() + " and " + missingItems.get(1).getName());

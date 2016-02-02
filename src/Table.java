@@ -9,7 +9,6 @@ public class Table {
 	
 	private ArrayList<Ingredients> contents = null;
 	private boolean empty = true;
-	private boolean running = true;
 	private int sandwiches = 0;
 	
 	/**
@@ -53,12 +52,6 @@ public class Table {
 		return items;
 	}
 	
-	public boolean isRunning(){
-		return running;
-	}
-	public void endRunning(){
-		running = false;
-	}
 	public void sandwichCreated(){
 		sandwiches++;
 	}
