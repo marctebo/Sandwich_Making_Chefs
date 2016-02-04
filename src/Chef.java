@@ -31,4 +31,7 @@ public class Chef implements Runnable{
 		}
 	}
 
+	public Ingredients getItem(){
+		return item;
+	}
 }

@@ -52,7 +52,7 @@ public class Table {
 		return items;
 	}
 	
-	public void sandwichCreated(){
+	public synchronized void sandwichCreated(){
 		sandwiches++;
 	}
 	public int getSandwiches(){
