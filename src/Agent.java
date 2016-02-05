@@ -10,6 +10,7 @@ public class Agent implements Runnable{
 	private Table table;
 	private ArrayList<Ingredients> items;
 	private Ingredients[] ingredients = {Ingredients.P_BUTTER, Ingredients.BREAD, Ingredients.JAM};
+	private final int maxSW = 20;	//max sandwiches to make
 	
 	public Agent(Table table){
 		this.table = table;
@@ -20,7 +21,7 @@ public class Agent implements Runnable{
 	 */
 	public void run(){
 		Random rand = new Random();
-		for(int i = 0; i < 20; i++){
+		for(int i = 0; i < maxSW; i++){
 			items = new ArrayList<Ingredients>();
 			while(items.size()< 2){
 				Ingredients j = ingredients[rand.nextInt(3)];

@@ -10,7 +10,7 @@ Files
 - Ingredients.java
 - SandwichMaker.java
 - Table.java
-- The UML and UCM diagrams will also be provided
+- The UML (Class/Collaboration) and UCM diagrams will also be provided
 
 Instructions for use
 1. Run the SandwichMaker.java main method
